@@ -12,7 +12,7 @@ publish config and migration files
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ~~~~
 ## Step 3 
-Run Database migration. if you have alredy created teh
+Run Database migration. if you have alredy created the user table drop the table and run the migration.
 ````
 php artisan migrate
 ````
