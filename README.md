@@ -138,7 +138,7 @@ the Above code will create new record inside users table after you execute `php 
  ````
  ````
  Route::group(['middleware' => 'auth:sanctum'], function(){
-    //you can your secure urls here.
+    //you can add your secure urls here.
     });
    ````
    I will teach you how to test our login API. After successful attempt we will create API for User Register module. 
