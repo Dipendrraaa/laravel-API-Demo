@@ -1,5 +1,5 @@
 # This is Demo app for Laravel API
-Sending verification after user registration.
+Sending verification after user registration. before start open localhost/phpmyadmin on your browser and update your user table. Add otp_code and is_verified columns. set default value of is_verified class to 0.   
 ## Step 1
 Setting up email.
 befor setting email driver you have to create app password for your mail account. you can visit this link( https://support.google.com/mail/answer/185833?hl=en-GB ) to learn how to create app password. After you generate app password open your `.env` file and go to the email section as shown below
