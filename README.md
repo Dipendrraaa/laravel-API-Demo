@@ -105,6 +105,7 @@ public function register(Request $request){
         $model->email= $request->email;
         $model->password=Hash::make($request->password);
         $otp=$this->otp();
+        $model->otp_code=$otp;
         if($model->save()){
             Mail::to($model->email)->send(new VerificationMail($model,$otp));
             return [
